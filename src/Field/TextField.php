@@ -1,6 +1,6 @@
 <?php
 
-namespace Yivoff\Invoicium\Wordpress\Options\Field;
+namespace Yivoff\Wp_Optional\Field;
 
 use Yivoff\VerySimpleHtmlWriter\WriterInterface;
 

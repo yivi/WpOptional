@@ -2,7 +2,6 @@
 
 namespace Yivoff\Wp_Optional;
 
-
 use Traversable;
 
 class SectionSettingsCollection implements \IteratorAggregate
@@ -28,7 +27,7 @@ class SectionSettingsCollection implements \IteratorAggregate
      * <b>Traversable</b>
      * @since 5.0.0
      */
-    public function getIterator()
+    public function getIterator(): Traversable
     {
         return new \ArrayIterator( $this->sections );
     }

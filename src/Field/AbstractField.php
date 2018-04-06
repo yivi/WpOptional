@@ -1,8 +1,8 @@
 <?php
 
-namespace Yivoff\Invoicium\Wordpress\Options\Field;
+namespace Yivoff\Wp_Optional\Field;
 
-use Yivoff\Invoicium\Wordpress\Options\FieldSettings;
+use Yivoff\Wp_Optional\FieldSettings;
 use Yivoff\VerySimpleHtmlWriter\WriterInterface;
 
 abstract class AbstractField

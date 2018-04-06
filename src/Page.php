@@ -2,7 +2,7 @@
 
 namespace Yivoff\Wp_Optional;
 
-use Yivoff\Invoicium\Wordpress\Options\Field\TextField;
+use Yivoff\Wp_Optional\Field\TextField;
 use Yivoff\VerySimpleHtmlWriter\HtmlWriterService;
 
 /**
