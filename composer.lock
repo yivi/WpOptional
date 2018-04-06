@@ -1,0 +1,58 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "384acc6239e063dcc33a59beabc225c9",
+    "packages": [
+        {
+            "name": "yivi/very-simple-html-writer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yivi/VerySimpleHtmlWriter.git",
+                "reference": "eee500897543bfd6f3654e38e97c682874ad1708"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yivi/VerySimpleHtmlWriter/zipball/eee500897543bfd6f3654e38e97c682874ad1708",
+                "reference": "eee500897543bfd6f3654e38e97c682874ad1708",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Yivoff\\VerySimpleHtmlWriter\\": "VerySimpleHtmlWriter/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "yivi",
+                    "email": "ivan+packagist@yivoff.com"
+                }
+            ],
+            "description": "This is a very simple HTML writer",
+            "time": "2018-04-05T09:52:19+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "yivi/very-simple-html-writer": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^7.1"
+    },
+    "platform-dev": []
+}
