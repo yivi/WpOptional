@@ -2,13 +2,14 @@
 
 namespace Yivoff\Wp_Optional\Field;
 
-use Yivoff\Wp_Optional\FieldSettings;
 use Yivoff\VerySimpleHtmlWriter\WriterInterface;
+use Yivoff\Wp_Optional\FieldSettings;
 
 abstract class AbstractField
 {
 
     protected $passed_validation = false;
+    protected $passed_sanitization = false;
 
     /**
      * @var FieldSettings
