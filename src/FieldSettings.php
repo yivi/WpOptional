@@ -50,10 +50,16 @@ class FieldSettings
     /**
      * @var array
      */
-    protected $extraAttributes;
+    protected $extraAttributes = [];
 
+    /**
+     * @var array
+     */
     protected $scripts_requirements = [];
-    private $style_requirements = [];
+    /**
+     * @var array
+     */
+    protected $style_requirements = [];
 
 
     /**
