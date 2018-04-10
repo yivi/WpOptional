@@ -117,27 +117,13 @@ class SectionSettings
      * @param string $id
      * @param string $title
      * @param string $type
-     * @param string $description
-     * @param string $default
-     * @param string $class
-     * @param array  $choices
-     *
-     * @param array  $extraAtts
      *
      * @return FieldSettings
      */
-    public function addField(
-        string $id,
-        string $title,
-        string $type,
-        string $description = '',
-        string $default = '',
-        string $class = '',
-        array $extraAtts = [],
-        array $choices = []
-    ): FieldSettings {
+    public function addField( string $id, string $title, string $type ): FieldSettings
+    {
 
-        $field = new FieldSettings( $id, $title, $type, $description, $default, $class, $extraAtts, $choices );
+        $field = new FieldSettings( $id, $title, $type );
         $this->fields->addField( $field );
 
         return $field;
