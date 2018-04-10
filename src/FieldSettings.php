@@ -58,31 +58,13 @@ class FieldSettings
      * @param string $id
      * @param string $title
      * @param string $type
-     * @param string $description
-     * @param string $default
-     * @param string $class
-     * @param array  $extraAttributes
-     * @param array  $choices Only used for radio and select
      */
-    public function __construct(
-        string $id,
-        string $title,
-        string $type,
-        string $description = '',
-        string $default = '',
-        string $class = '',
-        array $extraAttributes = [],
-        array $choices = []
-    ) {
+    public function __construct( string $id, string $title, string $type )
+    {
 
-        $this->id              = $id;
-        $this->title           = $title;
-        $this->type            = $type;
-        $this->description     = $description;
-        $this->choices         = $choices;
-        $this->class           = $class;
-        $this->default         = $default;
-        $this->extraAttributes = $extraAttributes;
+        $this->id    = $id;
+        $this->title = $title;
+        $this->type  = $type;
     }
 
     /**
@@ -216,10 +198,14 @@ class FieldSettings
 
     /**
      * @param mixed $default
+     *
+     * @return FieldSettings
      */
-    public function setDefault( $default ): void
+    public function setDefault( $default ): FieldSettings
     {
         $this->default = $default;
+
+        return $this;
     }
 
     /**
@@ -250,6 +236,18 @@ class FieldSettings
         return $this->extraAttributes;
     }
 
+    /**
+     * @param array $array
+     *
+     * @return FieldSettings
+     */
+    public function setExtraAttributes( $array = [] ): FieldSettings
+    {
+        $this->extraAttributes = $array;
+
+        return $this;
+    }
+
     public function asArray(): array
     {
         return [
@@ -267,21 +265,28 @@ class FieldSettings
         ];
     }
 
+    /**
+     * Builds a FieldSetting from an array
+     *
+     * @param array $array
+     *
+     * @return FieldSettings
+     */
     public static function fromArray( array $array ): FieldSettings
     {
         $field = new FieldSettings(
             $array['id'],
             $array['title'],
-            $array['type'],
-            $array['description'],
-            $array['default'],
-            $array['class'],
-            $array['extraAtts'],
-            $array['choices']
+            $array['type']
         );
 
-        $field->setSettingsKey( $array['settingsKey'] ?? '' );
-        $field->setHtmlWriter( $array['writerClass'] ?? '' );
+        $field->setDescription( $array['description'] ?? null )
+              ->setDefault( $array['default'] ?? null )
+              ->setClass( $array['class'] ?? null )
+              ->setExtraAttributes( $array['extraAtts'] ?? null )
+              ->setChoices( $array['choices'] ?? null )
+              ->setSettingsKey( $array['settingsKey'] ?? '' )
+              ->setHtmlWriter( $array['writerClass'] ?? '' );
 
         return $field;
 
