@@ -22,27 +22,31 @@ class FieldSettings
     /**
      * @var string
      */
-    protected $description;
+    protected $description = '';
     /**
      * @var array
      */
-    protected $choices;
+    protected $choices = [];
     /**
      * @var string
      */
-    protected $class;
+    protected $class = '';
     /**
      * @var string
      */
-    protected $settingsKey;
+    protected $settingsKey = '';
     /**
      * @var string
      */
-    protected $htmlWriter;
-
-    protected $value;
-
-    protected $default;
+    protected $htmlWriter = '';
+    /**
+     * @var string
+     */
+    protected $value = '';
+    /**
+     * @var string
+     */
+    protected $default = '';
     /**
      * @var array
      */
@@ -280,11 +284,11 @@ class FieldSettings
             $array['type']
         );
 
-        $field->setDescription( $array['description'] ?? null )
-              ->setDefault( $array['default'] ?? null )
-              ->setClass( $array['class'] ?? null )
-              ->setExtraAttributes( $array['extraAtts'] ?? null )
-              ->setChoices( $array['choices'] ?? null )
+        $field->setDescription( $array['description'] ?? '' )
+              ->setDefault( $array['default'] ?? '' )
+              ->setClass( $array['class'] ?? '' )
+              ->setExtraAttributes( $array['extraAtts'] ?? [] )
+              ->setChoices( $array['choices'] ?? [] )
               ->setSettingsKey( $array['settingsKey'] ?? '' )
               ->setHtmlWriter( $array['writerClass'] ?? '' );
 
