@@ -3,7 +3,7 @@
   "description": "A helping hand to create option pages and option fields",
   "minimum-stability": "dev",
   "license": "GPL-3.0-or-later",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "authors": [
     {
       "name": "yivi",
@@ -15,8 +15,8 @@
     "yivi/very-simple-html-writer": "dev-master"
   },
   "autoload": {
-    "psr-4": {
-      "Yivoff\\Wp_Optional\\": "src/"
-    }
+    "files": [
+      "bootstrap.php"
+    ]
   }
 }
