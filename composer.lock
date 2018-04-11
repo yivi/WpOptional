@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "384acc6239e063dcc33a59beabc225c9",
+    "content-hash": "834353ec1944c53500738286214f6779",
     "packages": [
         {
             "name": "yivi/very-simple-html-writer",
-            "version": "dev-master",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yivi/VerySimpleHtmlWriter.git",
-                "reference": "eee500897543bfd6f3654e38e97c682874ad1708"
+                "reference": "248a2bbde0e2e0085421d76e8570b045c810f6d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yivi/VerySimpleHtmlWriter/zipball/eee500897543bfd6f3654e38e97c682874ad1708",
-                "reference": "eee500897543bfd6f3654e38e97c682874ad1708",
+                "url": "https://api.github.com/repos/yivi/VerySimpleHtmlWriter/zipball/248a2bbde0e2e0085421d76e8570b045c810f6d0",
+                "reference": "248a2bbde0e2e0085421d76e8570b045c810f6d0",
                 "shasum": ""
             },
             "require": {
@@ -40,15 +40,13 @@
                 }
             ],
             "description": "This is a very simple HTML writer",
-            "time": "2018-04-05T09:52:19+00:00"
+            "time": "2018-04-11T16:29:27+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "yivi/very-simple-html-writer": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
